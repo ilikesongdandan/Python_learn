@@ -17,11 +17,13 @@ print soup.prettify()
 print soup.title
 print soup.head
 print soup.a
-# soup with tag 只获取第一个符合要求的标签
+# soup.tag 只获取第一个符合要求的标签
 # tags=soup('a')
 # print tags
 
 print soup.name
 print soup.head.name
+
+print soup.p
 print soup.p.attrs
 print soup.p['class']
