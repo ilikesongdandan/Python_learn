@@ -105,7 +105,7 @@ while not done:
 	pygame.draw.circle(screen,blue,[ballx,bally],6)
 	ballx=checkofsizex(ballx)
 	bally=checkofsizey(bally)
-
+	# get the time set the remaintime
 	timeNow=pygame.time.get_ticks()
 	timeErr=timeNow-timeStart
 	pygame.draw.rect(screen,white,(0,12,60-timeErr/1000,7))

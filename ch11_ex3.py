@@ -4,11 +4,19 @@ x="From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008"
 x_01=re.findall('@[^ ]+',x)
 print x_01
 
+x_02=re.findall('[0-9]+$',x)
+print x_02
+
+y = re.findall('[0-9]+',x)
+print y
+# x_03=re.findall('[a-z]+$',x)
+# print x_03
 
 for line in hand:
 	line=line.rstrip()
 	y=re.findall('^From .*(@[^ ]+)',line)
 	if len(y)>0:
+		# y=y[0]
 		print y
 
 x = 'We just received $10.00 for cookies.'
