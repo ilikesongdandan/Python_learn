@@ -3,8 +3,8 @@ import sqlite3
 conn=sqlite3.connect('test.sqlite')
 cur=conn.cursor()
 
-cur.execute('INSERT INTO test VALUES ("jianglik",12,19)')
-cur.execute('INSERT INTO test VALUES ("wujiang",13,19)')
+cur.execute('INSERT INTO test VALUES ("jianglik",14,19)')
+cur.execute('INSERT INTO test VALUES ("wujiang",15,19)')
 
 
 conn.commit()
