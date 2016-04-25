@@ -5,4 +5,7 @@ while repeats<360:
 	turtle.right(1)
 	repeats=repeats+1
 	# pass
-
+turtle.penup()
+turtle.goto(50,50)
+turtle.pendown()
+turtle.circle(50)
