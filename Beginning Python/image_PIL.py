@@ -1,6 +1,7 @@
 from PIL import Image
 import sys
 im=Image.open('test.jpg')
+im.show()
 print im.format,im.size,im.mode
 # print sys.path
 im.thumbnail((200,100))
